@@ -13,6 +13,6 @@ FROM nginx:stable-alpine as production-stage
 COPY --from=build-stage /app/front /usr/share/nginx/html
 RUN rm /etc/nginx/conf.d/default.conf
 COPY default.conf /etc/nginx/conf.d
-EXPOSE 81
+EXPOSE 3334
 CMD ["nginx", "-g", "daemon off;"]
 
