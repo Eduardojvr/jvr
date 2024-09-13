@@ -21,8 +21,8 @@ RUN rm /etc/nginx/conf.d/default.conf
 COPY default.conf /etc/nginx/conf.d
 
 # Copia os certificados SSL
-COPY codenge.crt /etc/nginx/certificados/codenge.crt
-COPY codenge.key /etc/nginx/certificados/codenge.key
+# COPY codenge.crt /etc/nginx/certificados/codenge.crt
+# COPY codenge.key /etc/nginx/certificados/codenge.key
 
 EXPOSE 80
 EXPOSE 443
